@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Search</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<a href="https://github.com/estevanmaito/imagesearch-fcc" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+	<div class="container">
+
+		<h1>Basejump: Image Search Abstraction Layer</h1>
+
+		<p>Search API entry:</p>
+		<code>http://herokuapp.com/imagesearch/{terms}?offset={page}</code>
+		<br><br>
+		
+		<p>Example:</p>
+		<code>http://herokuapp.com/imagesearch/troll%20face?offset=2</code>
+		<br><br>
+
+		<p>Output example:</p>
+		<pre>
+	[
+		{
+		    "url": "https://yt3.ggpht.com/-a7l6FEniSC0/AAAAAAAAAAI/AAAAAAAAAAA/w7hONZinD8k/s100-c-k-no/photo.jpg",
+		    "snippet": "Estevan Maito",
+		    "page": "https://www.youtube.com/channel/UCIUOmAsotrzdK8VsZuHfVHw"
+		},
+		{
+		    "url": "https://i.ytimg.com/vi/T65y3oj9s50/maxresdefault.jpg",
+		    "snippet": "Created playlists",
+		    "page": "https://www.youtube.com/channel/UCIUOmAsotrzdK8VsZuHfVHw"
+		},
+		{
+		    "url": "https://yt3.ggpht.com/-a7l6FEniSC0/AAAAAAAAAAI/AAAAAAAAAAA/w7hONZinD8k/s88-c-k-no/photo.jpg",
+		    "snippet": "Estevan Maito",
+		    "page": "https://www.youtube.com/watch?v=T65y3oj9s50"
+		}
+	]
+		</pre>
+		
+		<p>Latest search API entry:</p>
+		<code>http://herokuapp.com/latest</code>
+		<br><br>
+
+		<p>Example:</p>
+		<code>http://herokuapp.com/latest</code>
+		<br><br>
+
+		<p>Output example:</p>
+		<pre>
+	[
+		{
+		    "term": "estevanmaito",
+		    "when": "2016-01-11T17:32:34.189Z"
+		}
+	]
+		</pre>
+
+		<footer>
+			<p>Made by <a href="http://estevanmaito.com" target="_blank">Estevan Maito</a></p>
+		</footer>
+
+	</div>
+</body>
+</html>
